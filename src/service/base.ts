@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 
-const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost/pendataan/api"
+const BASE_URL = process.env.REACT_APP_API_URL || "https://staging.techcode.my.id/api"
 export const api = axios.create({ baseURL: `${BASE_URL}`, timeout: 30000 })
 
 export interface Response<T> {
