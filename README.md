@@ -16,4 +16,11 @@ yarn install
 di terminal
 
 ### edit file
-semua file yg di edit berada dalam folder src
+semua file yg di edit berada dalam folder src, kita menggunakan framework MUI dan react-bootstrap jadi documentasi  bisa langsung ke websitenya
+
+### menjalankan aplikasi
+untuk menjalankan ketik
+```
+yarn start
+```
+di terminal
