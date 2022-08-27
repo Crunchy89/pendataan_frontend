@@ -1,6 +1,7 @@
 export interface User{
     id?:number;
     uuid:string;
+    nik?:string;
     no_anggota?:string;
     email:string;
     nama?:string;
@@ -11,6 +12,7 @@ export interface User{
     jk?:"L"|"P";
     role:"member"|"admin";
     status:"Approved"|"Pending"|"Rejected";
+    agama?:string;
     created_at:string;
     updated_at:string;
 }

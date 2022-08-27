@@ -1,4 +1,3 @@
-import { Console } from 'console';
 import React, { useEffect, useState } from 'react';
 import { login,register } from '../../service/auth';
 
@@ -10,14 +9,13 @@ type Error = {
 const Login = () => {
     const [form,setForm]=useState({email:"",password:""})
     const [error,setError]=useState<Error>({email:undefined,password:undefined})
-    useEffect(()=>{
 
-    },[]);
     const handleChange = (e:any) => {
         const {name,value}=e.target
         setForm({...form,[name]:value})
         setError({...error,[name]:undefined})
     }
+
     const handleSubmit = (e:any) =>{
         e.preventDefault();
         login(form.email,form.password)
