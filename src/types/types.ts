@@ -11,4 +11,13 @@ export interface User{
     jk?:"L"|"P";
     role:"member"|"admin";
     status:"Approved"|"Pending"|"Rejected";
+    created_at:string;
+    updated_at:string;
+}
+
+export interface Login {
+        access_token: string;
+        token_type: string;
+        expires_in: number;
+        user: User 
 }
