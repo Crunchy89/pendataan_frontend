@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { login,register } from '../../service/auth';
+import {login,register} from "../service/auth"
 
 type Error = {
     email?:string[]|undefined
-    password:string[]|undefined
+    password?:string[]|undefined
+}
+
+interface Form {
+    email:string;
+    password:string;
 }
 
 const Login = () => {
-    const [form,setForm]=useState({email:"",password:""})
+    const [form,setForm]=useState<Form>({email:"",password:""})
     const [error,setError]=useState<Error>({email:undefined,password:undefined})
 
     const handleChange = (e:any) => {
