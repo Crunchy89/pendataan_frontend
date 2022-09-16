@@ -15,7 +15,7 @@ const Login = () => {
     const [form,setForm]=useState<Form>({email:"",password:""})
     const [error,setError]=useState<Error>({email:undefined,password:undefined})
 
-    const handleChange = (e:any) => {
+    const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
         const {name,value}=e.target
         setForm({...form,[name]:value})
         setError({...error,[name]:undefined})
